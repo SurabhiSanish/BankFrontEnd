@@ -1,0 +1,46 @@
+ANGULAR
+
+Basic Building blocks
+
+1)modules -To import 3rd party modules(root modules)
+2)components - To create HTML , CSS and ts files
+
+
+Basic Commands
+
+1)ng new project_name - To create a new project
+2)ng g c component_name  - To create a new component
+3) ng serve --open - To run angular file
+
+
+
+Basic concepts
+
+1) Data Binding  -Share data between components
+
+ts file if component 
+and html is view
+
+data sharing is between componemt and view
+
+    Two types of data sharing
+       a)One way data binding (1 direction)
+            The one way data binding between component to view or view to component
+
+               a.1)component to view 
+                     i)string interpolation (1 direction ) - {{expression}}  [(<h6>{{aim}}</h6> in login.component.html  ]
+
+                    ii) property binding  ([placeholder]="account"  in login.component.html )
+
+                a.2)view to component
+                     i)Event binding (1 direction)-(event_name)="function_name()";
+                           (login()created in login component.ts and create a (click) fuction in button in  login.component.html)
+
+                     ii) Event binding using $event (event_name)="fuction_name($event_name)";
+                           ()
+
+
+
+
+
+
