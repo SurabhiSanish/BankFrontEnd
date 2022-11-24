@@ -27,17 +27,18 @@ data sharing is between componemt and view
        a)One way data binding (1 direction)
             The one way data binding between component to view or view to component
 
-               a.1)component to view 
+               a.1)component to view (ts-->html)
                      i)string interpolation (1 direction ) - {{expression}}  [(<h6>{{aim}}</h6> in login.component.html  ]
 
                     ii) property binding  ([placeholder]="account"  in login.component.html )
 
-                a.2)view to component
+                a.2)view to component  (html-->ts)
                      i)Event binding (1 direction)-(event_name)="function_name()";
                            (login()created in login component.ts and create a (click) fuction in button in  login.component.html)
 
                      ii) Event binding using $event (event_name)="fuction_name($event_name)";
-                           ()
+                     iii) Event binding using template referenceing variable - #variable_name  
+                           
 
 
 
