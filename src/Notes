@@ -39,6 +39,38 @@ data sharing is between componemt and view
                      ii) Event binding using $event (event_name)="fuction_name($event_name)";
                      iii) Event binding using template referenceing variable - #variable_name  
                            
+        b) Two way data binding (2 direction - at a time data send to  html->ts and ts->html)    
+
+                 i)ngModel -  formModule  (for using ngModelwe need formModule and it contain in app.module.ts)
+                               [(ngModel)]="propert_name"  
+
+                 ii)angular routing - To set path for a component  (we set the path in  app-routing.module.ts file and it write inside the    const routes: Routes = [];)
+                           syntax:
+                                 {
+                                    path : "value",component:class_name
+                                 }                 
+                            Example: Login (login is main page so it need only '' in path)
+
+                                {
+                                    path:'',component:LoginComponent
+                                },
+
+                iii)Dependancy injection -To share data between two dependent classes
+                             eg: Router class -navigateByaurl is used to navigete the component
+
+                iv)Angular services  - to hold redundant data   
+                     ng g s service_name    (desktopile folderin bank app ->src ->app->open terminal athinagathu ee co)         
+                                  
+
+
+
+
+
+
+
+
+
+                                      
 
 
 
