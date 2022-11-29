@@ -59,7 +59,31 @@ data sharing is between componemt and view
                              eg: Router class -navigateByaurl is used to navigete the component
 
                 iv)Angular services  - to hold redundant data   
-                     ng g s service_name    (desktopile folderin bank app ->src ->app->open terminal athinagathu ee co)         
+                     ng g s service_name    (desktopile folderin bank app ->src ->app->open terminal athinagathu ee co) 
+
+                 v)Angular directives   -  To manipulate DOM
+
+                       a) Component Directives(array)
+                       b) Structural Directives(table)   
+                            1) *ngFor 
+
+                 vi) Angular Forms
+
+                       a)Template Driven Forms   (First design HTML page  and cant do validations )
+                       b)Model Driven Forms    (First design Model in ts file . It have easy validation methods)
+                             -Advanced validation
+
+                             1)Reactive Forms  -
+                                 Reactive forms include
+                                 a)form group
+                                 b)form array 
+                                 c)form control
+
+                                 We can directly add validations via importing reactive form module
+
+
+
+
                                   
 
 

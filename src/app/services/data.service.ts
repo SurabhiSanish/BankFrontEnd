@@ -4,8 +4,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
-
+//current user
    currentUser="";
+
+   //current Acno
+   currentAcno="";
 
   constructor() { }
 
@@ -44,6 +47,7 @@ export class DataService {
     if(acno in userDetails){
       if(pswd==userDetails[acno]['password']){
         this.currentUser=userDetails[acno]['username']
+        this.currentAcno=acno;
         return true;
       }
       else{
@@ -85,8 +89,14 @@ export class DataService {
     var amount=parseInt(amt);
     if(acno in userDetails){
       if(pswd==userDetails[acno]['password']){
-        if(userDetails[acno]['balance']>amount){
+        if(userDetails[acno]['balance']>=amount){
           userDetails[acno]['balance'] -=amount;
+          userDetails[acno]['transaction'].push({
+            Type:'Debit',
+            Amount:amount
+  
+          })
+          console.log(userDetails)
           return userDetails[acno]['balance'];
           }
           else{
@@ -103,8 +113,13 @@ export class DataService {
       alert('invalid userdetails');
       return false;
     }
-
+    
   }
+  getTransaction(acno:any){
+    return this.userDetails[acno]['transaction']
+  
+  }
+
 
   
 }
